@@ -6,6 +6,7 @@ import friends from "./friendsList/friends.json";
 import { FriendsList } from "./friendsList/friends.jsx";
 import transactions from "./transactions/transactions.json";
 import { TransactionHistory } from "./transactions/transactions.jsx";
+import { GlobalStyle } from "./GlobalStyle";
 
 
 
@@ -19,8 +20,6 @@ export const App = () => {
         flexDirection: 'column',
         padding: 20,
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
       }}
     >
       <Profile
@@ -35,6 +34,8 @@ export const App = () => {
       <FriendsList friends={friends} />
       
       <TransactionHistory items ={transactions} />
+
+      <GlobalStyle />
     </div>
   );
 };
