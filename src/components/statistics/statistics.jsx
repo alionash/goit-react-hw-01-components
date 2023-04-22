@@ -4,7 +4,7 @@ import { StatisticsContainer, Stats, Item, Title, Percentage, Label } from './st
 export const Statistics = ({ title, stats }) => {
     return (
         <StatisticsContainer>
-            <Title>{ title }</Title>
+            {title && <Title>{title}</Title>}
 
             <Stats> {stats.map(stat =>
                 <Item key={ stat.id } class="item">
